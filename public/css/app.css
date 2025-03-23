@@ -1,0 +1,356 @@
+
+:root {
+    --gti-orange: #ff6a39;
+    --gti-blue: #0d8aee;
+}
+
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--gti-blue);
+}
+
+
+@keyframes floatRocket {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(-2deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.code-img {
+    width: 100%;
+    max-width: 400px; /* Adjust size as needed */
+    animation: floatRocket 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section h3,
+.transformation-text,
+.numerique-text,
+.hero-description {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    text-align: start;
+}
+
+/* Main Hero Text */
+.hero-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* First & Third Line */
+.transformation-text,
+.numerique-text {
+    font-size: 2rem; /* Default size for mobile devices */
+}
+
+@media (min-width: 768px) {
+    .transformation-text,
+    .numerique-text {
+        font-size: 3rem; /* Size for large screens (tablets, desktops) */
+    }
+}
+
+/* "with" Design */
+.hero-connector {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+/* Highlighted Words */
+.highlight {
+    color: #ff6a39; /* Modern contrast color */
+    font-weight: 900;
+}
+
+/* Hero Description */
+.hero-description {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: justify;
+
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text div, .hero-connector {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+/* Main Axess Section */
+.main-axess {
+    padding: 30px 0;
+    /*background: linear-gradient(135deg, #007bff, #ff5722); !* Diagonal Gradient Background *!*/
+    /*color: #fff; !* Text color for contrast *!*/
+
+    background-image: url("../assets/media/Wall1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.main-axess::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background: rgba(0, 0, 0, 0.2); !* Overlay effect *!*/
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+/* Adjust the row layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+/* Axess Card */
+.axess-card {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    flex: 1; /* Ensure all cards take equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Style */
+.axess-icon span, .service-icon span, .solution-icon span {
+    font-size: 3rem;
+    color: #1d0088;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* Icon Hover Effect */
+.axess-card:hover .axess-icon span, .service-icon span:hover, .solution-icon span:hover {
+    color: #ff6a39;
+}
+
+
+/* Title Style */
+.axess-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Description Style */
+.axess-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+/* Hover Effects */
+.axess-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    transform: translateY(-10px);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack cards on mobile */
+    }
+}
+
+/* Button Style */
+.axess-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff; /* Button text color */
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.axess-btn:hover {
+    background-color: #ff6a39; /* Hover color */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Button Focus Style */
+.axess-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* our solutions Section */
+.solutions {
+    padding: 600px 0;
+    background-image: url("../assets/media/WALL2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* our solutions Section */
+.services {
+    padding: 100px 0;
+
+}
+
+/* Floating button styling */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366; /* WhatsApp Green */
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* WhatsApp Button */
+#whatsapp-btn {
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whatsapp-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    right: 90px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide Back to Top initially */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Show when scrolling */
+.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.client-slider img {
+    padding: 0 5px; /* Add some padding around the images */
+    max-height: 150px;
+}
+
+/* Reduce space between slider and dots */
+.custom-dots {
+    margin-top: 10px; /* Adjust this value to reduce the space */
+}
+
+/* Optional: Adjust the size and spacing of the dots */
+.custom-dots li {
+    margin: 0 5px; /* Space between dots */
+}
+
+.custom-dots li button:before {
+    font-size: 12px; /* Size of the dots */
+    color: #ccc; /* Default dot color */
+}
+
+.custom-dots li.slick-active button:before {
+    color: #333; /* Active dot color */
+}
+
+.slick-list {
+    margin-bottom: 10px; /* Adjust this value to reduce space */
+}
+
+.slick-slide {
+    height: 150px !important;
+}

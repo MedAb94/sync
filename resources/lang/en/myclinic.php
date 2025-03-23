@@ -1,0 +1,90 @@
+<?php
+
+return [
+    "hero_title" => "MyClinic",
+    "hero_subtitle" => "Integrated Hospital and Clinic Management System",
+    "hero_text" => "Revolutionize your healthcare facility with our all-in-one solution – easy setup, instant access, and complete care management.",
+    "benefits_security" => "Security and Transparency – Zero fraud risk with advanced and secure management.",
+    "benefits_automation" => "Intelligent Automation – A fully computerized system for smooth and efficient monitoring.",
+    "benefits_decision" => "Optimized Decision Making – Accurate data and statistics for better management.",
+    "cta_text" => "Make your clinic digital in one click!",
+    "cta_button" => "GET IN TOUCH",
+
+
+    "hospitals_and_clinics_title" => "Hospitals and Clinics",
+    "hospitals_and_clinics_description" => "Choose MyClinic to meet the diverse and growing healthcare needs in small and large hospitals, public and private clinics, dental clinics, beauty care clinics, etc.",
+    "benefit_1" => "Improve clinic workflow",
+    "benefit_2" => "Keep records organized and compliant",
+    "benefit_3" => "Manage appointments for large-scale clinics",
+    "benefit_4" => "Foster a good relationship between the clinic and the patient",
+    "cta_clinic_plan" => "CLINIC PLAN",
+
+
+    "practitioners_title" => "Practices and Dispensaries",
+    "practitioners_description" => "Expand your solo practice experience with advanced EHR, scheduling, and management tools to provide exceptional personalized care to your patients.",
+    "practitioners_benefit_1" => "Admit more patients in less time",
+    "practitioners_benefit_2" => "Optimize Resources",
+    "practitioners_benefit_3" => "Control and master your individual schedule",
+    "practitioners_benefit_4" => "Achieve more without hiring additional staff",
+    "cta_individual_plan" => "INDIVIDUAL PLAN",
+
+
+    "pos_title" => "POS - A Versatile and Secure Payment System",
+    "pos_description" => "The <strong>Point of Sale (POS)</strong> module of <strong>MyClinic</strong> offers an <strong>ultra-fast, flexible, and highly secure</strong> solution to allow patients to <b>quickly pay for their services</b>. Secured and optimized to prevent fraud.",
+    "pos_payment_methods_title" => "Accepts all payment methods",
+    "pos_payment_method_1" => "Cash payment",
+    "pos_payment_method_2" => "Electronic payment via Banikily, Masrvi, Sedad, and other local and international solutions",
+    "pos_payment_method_3" => "Payment via customer accounts",
+    "pos_payment_method_4" => "Detailed financial report generation",
+
+    "pos_centralized_management_title" => "Centralized payment method management",
+    "pos_centralized_management_1" => "Activate/Deactivate methods according to clinic needs",
+    "pos_centralized_management_2" => "Real-time tracking of transactions and financial flows",
+    "pos_enhanced_security_title" => "Enhanced security",
+    "pos_enhanced_security_1" => "Strict authentication to prevent fraud",
+    "pos_enhanced_security_2" => "Detailed transaction logging for full transparency",
+    "pos_enhanced_security_3" => "Protection against errors and suspicious manipulations",
+    "pos_integration_title" => "Seamless integration with billing and treasury",
+    "pos_integration_description" => "Each payment is immediately synchronized with the <strong>billing</strong> module and integrated into <strong>financial tracking</strong>, ensuring optimized management of clinic finances.",
+
+
+    "myclinic_title" => "MyClinic - Comprehensive Management of Clinics and Hospitals",
+    "myclinic_subtitle" => "An integrated solution to optimize healthcare facility management.",
+    "dashboard_title" => "Dashboard - A Real-Time Global View",
+    "dashboard_description" => "MyClinic's dashboard provides an overview of the facility's activities. Real-time statistics, detailed reports, and key indicators allow managers to access accurate data for quick and effective decision-making.",
+    "reception_title" => "Reception - Smooth Management of Patient Flow",
+    "reception_insured" => "Insured",
+    "reception_insured_description" => "Verification of eligibility for patients affiliated with health insurance to avoid delays in care.",
+    "reception_welcome" => "Welcome",
+    "reception_welcome_description" => "An intelligent queue management system, reducing wait times and optimizing patient flow.",
+    "hospital_title" => "Hospital - Comprehensive Care and Staff Management",
+    "hospital_care" => "Care",
+    "hospital_care_description" => "Complete and efficient management of hospitalizations and emergencies, ensuring optimal coordination of medical teams.",
+    "hospital_staff" => "Staff",
+    "hospital_staff_description" => "Organization of medical specialties and tracking of human resources for smooth and efficient service.",
+    "hospital_management" => "Management",
+    "hospital_management_description" => "Complete administration of patients, rooms, medical services, and care categories for seamless management.",
+    "treasury_title" => "Treasury - Total Control of Finances",
+    "treasury_description" => "This module ensures rigorous management of clinic finances, including treasury, banks, and cash flow. It allows precise tracking of financial inflows and outflows, ensuring economic stability.",
+    "billing_title" => "Billing - A Powerful Tool for Transparent Accounting",
+    "billing_description" => "A powerful module with management of insurance company slips, coverage, and price lists to ensure total transparency of medical costs.",
+    "stock_title" => "Stock - Advanced Supply Management",
+    "stock_description_1" => "Complete stock management with precise tracking of medical and pharmaceutical products.",
+    "stock_description_2" => "Unlimited warehouses and storage points.",
+    "stock_description_3" => "Stock alert system to avoid shortages and optimize orders.",
+    "stock_description_4" => "Inventory management.",
+    "purchases_title" => "Purchases - Simplified Tracking of Medical Supplies",
+    "purchases_description" => "A dedicated module for managing purchases, optimizing the supply of medications, equipment, and hospital consumables while ensuring order traceability and good supplier relationships.",
+    "hr_title" => "Human Resources - Optimized Team Administration",
+    "hr_employees" => "Complete employee management",
+    "hr_employees_description" => "contracts and payroll with automatic generation of pay slips.",
+    "hr_organization" => "Organization by department and absence management.",
+    "ehr_title" => "Electronic Health Record - A Revolution in Patient Tracking",
+    "ehr_description" => "MyClinic's Electronic Health Record (EHR) provides quick and secure access to medical history, prescriptions, test results, and practitioner notes. It improves coordination among healthcare professionals and ensures better patient follow-up.",
+    "maintenance_title" => "Maintenance - Preventive and Curative Equipment Tracking",
+    "maintenance_description" => "A dedicated module for managing medical equipment, allowing planning and tracking of preventive and curative maintenance operations to ensure proper functioning of facilities and patient safety.",
+    "start_now_button"=> "START NOW"
+
+
+
+];
