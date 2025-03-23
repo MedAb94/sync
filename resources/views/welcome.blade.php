@@ -205,7 +205,6 @@
         </div>
     </section>
 
-
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-white">
         <div class="container">
@@ -271,8 +270,6 @@
             </div>
         </div>
     </section>
-
-
 
     <!-- Add this before the closing </body> tag -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

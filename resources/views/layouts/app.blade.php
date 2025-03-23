@@ -30,7 +30,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <!-- Styles -->
-    <link href="css/app.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 </head>
 <body>
 <div id="app">
@@ -91,19 +91,20 @@
 
     <main>
         @yield('content')
+        <a href="https://wa.me/22243204060?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+           target="_blank" id="whatsapp-btn" class="floating-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="floating-btn hidden">
+            ⬆️
+        </button>
     </main>
     <!-- WhatsApp Button -->
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/22243204060?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
-       target="_blank" id="whatsapp-btn" class="floating-btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </a>
 
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="floating-btn hidden">
-        ⬆️
-    </button>
 
 </div>
 

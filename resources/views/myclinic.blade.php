@@ -4,155 +4,8 @@
 @endsection
 
 @section('content')
-    <style>
-        .hero-section {
-            color: white;
-            background: linear-gradient(277deg, rgba(28, 99, 237, 0) 0, #1d0088 60.42%), url(/assets/media/hero.png) 50% / cover no-repeat;
-        }
 
-        .hero-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        @media (min-width: 768px) {
-            .hero-title {
-                font-size: 3rem; /* Size for large screens (tablets, desktops) */
-            }
-        }
-
-        .subtitle {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-text {
-            font-size: 1.1rem;
-            max-width: 600px;
-        }
-
-        .divider {
-            height: 2px;
-            background-color: rgba(255, 255, 255, 0.2);
-            width: 100%;
-        }
-
-        .benefits-list {
-            padding-left: 0;
-            list-style: none;
-            /*margin-bottom: 30px;*/
-        }
-
-        .benefits-list li {
-            /*font-size: 1.1rem;*/
-            margin-left: 15px;
-        }
-
-        .benefits-list li::before {
-            content: "•";
-            color: #ff6a00;
-            font-size: 1.5rem;
-            display: inline-block;
-            width: 1.5rem;
-            margin-left: -1rem;
-        }
-
-        .cta-text {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 25px;
-        }
-
-        .cta-button {
-            background-color: #ff6a00;
-            color: white;
-            border: none;
-            padding: 12px 40px;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #e05e00;
-        }
-
-        .doctor-image {
-            max-height: 500px;
-            position: relative;
-        }
-
-        .placeholder-image {
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            border-radius: 10px;
-        }
-
-        .card {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card-body {
-            flex: 1;
-        }
-
-
-        .list-group-item {
-            border: none; /* Supprimer les bordures des éléments de liste */
-            padding: 0.75rem 1.25rem;
-        }
-
-        .myclinic-section .card {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .myclinic-section .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .myclinic-section .card-body {
-            flex: 1;
-        }
-
-        .myclinic-section .card-title {
-            color: #0d6efd; /* Couleur bleue pour les titres */
-            font-weight: bold;
-        }
-
-        .myclinic-section .card-text, .myclinic-section .card ul {
-            color: #555;
-        }
-
-        .myclinic-section .card ul {
-            padding-left: 1.5rem;
-        }
-
-        .myclinic-section .card ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .myclinic-section .icon {
-            font-size: 1.5rem;
-            margin-right: 0.5rem;
-            color: #0d6efd;
-        }
-
-    </style>
-
-    <div class="hero-section p-5">
+    <div class="myclinic-hero-section p-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -449,11 +302,7 @@
         </div>
     </section>
 
-
-
-
     {{--MODULES--}}
-
     <section class="py-5 myclinic-section">
         <div class="container">
             <div class="text-center mb-5">
