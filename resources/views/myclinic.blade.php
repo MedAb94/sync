@@ -311,132 +311,29 @@
             </div>
 
             <div class="row g-4">
-                <!-- Carte 1 : Dashboard -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.dashboard_title') }}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{ __('myclinic.dashboard_description') }}</p>
+                @foreach ([
+                    ['title' => 'dashboard_title', 'description' => 'dashboard_description'],
+                    ['title' => 'reception_title', 'description' => 'reception_description'],
+                    ['title' => 'hospital_title', 'description' => 'hospital_description'],
+                    ['title' => 'treasury_title', 'description' => 'treasury_description'],
+                    ['title' => 'billing_title', 'description' => 'billing_description'],
+                    ['title' => 'stock_title', 'description' => 'stock_description'],
+                    ['title' => 'purchases_title', 'description' => 'purchases_description'],
+                    ['title' => 'hr_title', 'description' => 'hr_description'],
+                    ['title' => 'ehr_title', 'description' => 'ehr_description'],
+                    ['title' => 'maintenance_title', 'description' => 'maintenance_description']
+                ] as $card)
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="/assets/media/placeholder.png" class="card-img-top" alt="Clinic Image"
+                                 style="max-height: 200px; width: 100%; object-fit: cover;">
+                            <h5 class="card-title bg-primary text-white p-2">{{ __('myclinic.' . $card['title']) }}</h5>
+                            <div class="card-body">
+                                <p class="card-text">{{ __('myclinic.' . $card['description']) }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Carte 2 : Réception -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.reception_title') }}</h5>
-                        <div class="card-body">
-                            <ul>
-                                <li>
-                                    <b>{{ __('myclinic.reception_insured') }}</b>: {{ __('myclinic.reception_insured_description') }}
-                                </li>
-                                <li>
-                                    <b>{{ __('myclinic.reception_welcome') }}</b>: {{ __('myclinic.reception_welcome_description') }}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 3 : Hôpital -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.hospital_title') }}</h5>
-                        <div class="card-body">
-                            <ul>
-                                <li>
-                                    <b>{{ __('myclinic.hospital_care') }}</b>: {{ __('myclinic.hospital_care_description') }}
-                                </li>
-                                <li>
-                                    <b>{{ __('myclinic.hospital_staff') }}</b>: {{ __('myclinic.hospital_staff_description') }}
-                                </li>
-                                <li>
-                                    <b>{{ __('myclinic.hospital_management') }}</b>: {{ __('myclinic.hospital_management_description') }}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 4 : Trésorerie -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.treasury_title') }}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{ __('myclinic.treasury_description') }}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 5 : Facturation -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.billing_title') }}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{ __('myclinic.billing_description') }}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 6 : Stock -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.stock_title') }}</h5>
-                        <div class="card-body">
-                            <ul>
-                                <li>{{ __('myclinic.stock_description_1') }}</li>
-                                <li>{{ __('myclinic.stock_description_2') }}</li>
-                                <li>{{ __('myclinic.stock_description_3') }}</li>
-                                <li>{{ __('myclinic.stock_description_4') }}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 7 : Achats -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.purchases_title') }}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{ __('myclinic.purchases_description') }}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 8 : Ressources Humaines -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.hr_title') }}</h5>
-                        <div class="card-body">
-                            <ul>
-                                <li>
-                                    <b>{{ __('myclinic.hr_employees') }}</b>: {{ __('myclinic.hr_employees_description') }}
-                                </li>
-                                <li>{{ __('myclinic.hr_organization') }}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 9 : Dossier Médical Électronique -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.ehr_title') }}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{ __('myclinic.ehr_description') }}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 10 : Maintenance -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <h5 class="card-title bg-primary text-white p-2 rounded">{{ __('myclinic.maintenance_title') }}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{ __('myclinic.maintenance_description') }}</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

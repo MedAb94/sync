@@ -176,31 +176,26 @@
                 <h2 class="text-primary fw-bold">{{ __('content.home.clients_title') }}</h2>
                 <p class="text-muted mb-5">{{ __('content.home.clients_desc') }}</p>
             </div>
+
+            @php
+                $clients = [
+                    ['logo' => '1.png', 'name'=>"Clinique Chiva"],
+                    ['logo' => '2.jpeg', 'name'=>"Ministere de la transition numerique"],
+                    ['logo' => 'taazour.jpeg', 'name'=>"TAAZOUR"],
+                    ['logo' => 'csa.jpg', 'name'=>"CSA"],
+                    ['logo' => 'evad.png', 'name'=>"EVAD"],
+                ];
+            @endphp
+
             <div class="client-slider">
-                <div class="text-center">
-                    <img src="/assets/media/clients/1.png" alt="Client Logo" class="img-fluid">
-                </div>
-                <div class="text-center">
-                    <img src="/assets/media/clients/2.jpeg" alt="Client Logo" class="img-fluid">
-                </div>
-                <div class="text-center">
-                    <img src="/assets/media/clients/1.png" alt="Client Logo" class="img-fluid">
-                </div>
-                <div class="text-center">
-                    <img src="/assets/media/clients/2.jpeg" alt="Client Logo" class="img-fluid">
-                </div>
-                <div class="text-center">
-                    <img src="/assets/media/clients/1.png" alt="Client Logo" class="img-fluid">
-                </div>
-                <div class="text-center">
-                    <img src="/assets/media/clients/2.jpeg" alt="Client Logo" class="img-fluid">
-                </div>
-                <div class="text-center">
-                    <img src="/assets/media/clients/1.png" alt="Client Logo" class="img-fluid">
-                </div>
-                <div class="text-center">
-                    <img src="/assets/media/clients/2.jpeg" alt="Client Logo" class="img-fluid">
-                </div>
+                @foreach($clients as $client)
+                    <div class="text-center px-2">
+                        <div class="text-center rounded p-3">
+                            <img src="/assets/media/clients/{{ $client['logo'] }}" alt="{{ $client['name'] }}" class="img-fluid mb-2 mx-auto">
+                            <div class="fw-bold text-muted small">{{ $client['name'] }}</div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
